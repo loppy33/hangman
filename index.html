@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="modal" id="modal">
+        <form action="">
+            <h2 class="settings">Настройки</h2>
+            <button type="button" id="solo">Одиночная Игра</button>
+            <button type="button" id="multi">Мультиплеер</button>
+        </form>
+    </div>
+    <div class="wordModal" id="wordModal">
+        <form action="">
+            <h2>Загадайте слово</h2>
+            <input type="text" class="wordInput" id="wordInput" placeholder="Звездочка">
+            <button type="button" id="guess">Загадать</button>
+        </form>
+    </div>
+    <form action="">
+        <h1 id="title">Виселица</h1>
+        <img src="/img/hangman0.png" alt="" id="img">
+        <div>
+        <h2 class="stars" id="stars"></h2>
+        </div>
+        <input type="text" maxlength="1" id="userInput" autocomplete="off" placeholder="?" >
+        <button id="check">Проверить</button>
+        <button type="button" id="newGame">Новая Игра</button>
+        <button type="button" id="settings">Настройки</button>
+        <p id="letters">Правила: Вводи буквы чтобы угадать слово!</p>
+    </form>
+
+
+
+
+
+
+
+    <script type="module" src="/script.js"></script>
+</body>
+</html>
+
+
+<!-- 
+        1. По нажатию на новая игра в консоли выводить фразу "Я смог!" 77 раз!
+        2. Исправить использоване буквы!
+        
+ -->
+
