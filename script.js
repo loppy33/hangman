@@ -71,7 +71,7 @@ function getFontSize(){
     stars.style.fontSize = '25px'
     while(stars.offsetHeight>30){
         stars.style.fontSize = parseInt(window.getComputedStyle(stars).fontSize)-1+'px'
-        
+
 
     }
 }
@@ -127,7 +127,7 @@ checkButton.onclick = function (event){
     else {
         imgNumber = imgNumber+1
         // console.log(imgNumber)
-        img.src = "/img/hangman"+imgNumber+".png"
+        img.src = "img/hangman"+imgNumber+".png"
             
         if (imgNumber == 6){
             checkButton.disabled = true
@@ -138,6 +138,8 @@ checkButton.onclick = function (event){
     }
     userInput.select()
 }
+
+
 
 newGame.onclick = function (){
     if (mode == 'solo'){
@@ -206,10 +208,11 @@ guess.onclick = function (){
 
 function startGame (){
     refreshSecretArray()
+    getFontSize()
     stars.innerHTML = secretArray.join('')
     // stars.innerHTML = "*".repeat(secretWord.length)
     imgNumber = 0
-    img.src = "/img/hangman0.png"
+    img.src = "img/hangman0.png"
     letters.innerHTML = "Правила: Вводи буквы чтобы угадать слово!"
     usedLetters = ""
     userInput.select()

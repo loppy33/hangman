@@ -1,0 +1,151 @@
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background-image: url("img/background.jpg");
+    
+}
+
+form{
+    background-color: rgba(255, 255, 255, 0.623);
+    max-width: 700px;
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    border: solid rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 50px;
+    box-sizing: border-box;
+    
+}
+
+input{
+    display: block;
+    margin: 15px auto;
+    width: 65px;
+    line-height: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    color: rgba(0, 0, 0, 0.705);
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #bdbdbd;
+    border-radius: 0.25rem;
+    text-align: center;
+    caret-color: transparent;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    outline: none;
+    cursor: text;
+    transition: 0.3s;
+}
+
+input:hover{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+::placeholder {
+    opacity: 40%;
+  }
+
+button{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    height: 36px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+button:hover{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+p{
+    padding: 10px;
+}
+
+
+img{
+    /* width: 50%; */
+    border-radius: 250px;
+    border: 1px solid rgba(255, 255, 255, 0);
+    background-color: rgba(182, 159, 159, 0.438);
+}
+
+
+.modal, .wordModal{
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    transform: translateY(-100%);
+    transition: 1s;
+    
+}
+
+.modal form{
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.37);
+    
+}
+
+
+.wordInput{
+    width: 300px;
+    height: 40px;
+    font-size: 16px;
+    caret-color: black;
+
+}
+
+
+h1{
+    margin-bottom: 50px;
+}
+
+.stars{
+    margin-top: 15px;
+    background-color: #fff;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 0 10px;
+    line-height: 30px;
+}
+
+@media (max-width: 600px) {
+    .stars{
+        font-size: 16px;
+    }
+    button{
+        margin: 5px;
+    }
+
+    form{
+        padding: 10px;
+    }
+
+    img{
+        width: 80%;
+    }
+
+    h1{
+        margin-bottom: 10px;
+    }
+}
+
+
